@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- The head and all elements until the sidebar are copy-pasted
+         from the home page example. We'd just change the page title
+         and header title to reflect what this page is.
+    -->
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Page title here -->
+        <title>Portfolio - User Page</title>
+        <link href="app/css/style.css" rel="stylesheet">
+        <!-- <link href="portfolio.css" rel="stylesheet"> -->
+    </head>
+    <body>
+        <header>
+            <div class="main-container">
+                <div class="left-column">
+                    <img src= 'CSS/Assets/Logo/JPCS.png' />
+                </div>
+                <div class="right-column">
+                    <span>Portfolio</span>
+                    <img src="css/assets/icons/Portfolio.png" style="background: #E67F34; width: 24px; height: 24px; border-radius: 100%; padding: 5px;"/>
+                </div>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="content-wrapper">
+                <div id="sidebar" class="left-column">
+                    <nav>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="services.html">Services</a></li>
+                    </nav>
+                </div>
+                <!-- This is the "actual" content. Same explanation from the home page example. -->
+                <div id="content" class="right-column card-container">
+                    <!-- Now, for this one, since we'd want to imitate that "floating"
+                         kind of style from the wireframe (?), we'll include
+                         "floating" in the class attribute. As stated many times earlier,
+                         the CSS people will handle the presentation. -->
+                    <div class="card-container horizontal floating">
+                        <!-- Cards will be used here again, we want it to have two rows. -->
+                        <div class="card two-row">
+                            <!-- An image row  -->
+                            <div class="image-row">
+                                <img src="CSS/Assets/Logo/MainP.jpg"/>
+                            </div>
+                            <!-- And a text/content row
+                                 You see, since the style is common across cards
+                                 with image rows or content rows, we'll just reuse
+                                 them again around here. -->
+                            <div class="content-row">
+                                <p>Content 1</p>
+                            </div>
+                        </div>
+                        <!-- The second card is practically identical with the first one
+                             and we'll just update the contents untill we have three cards. -->
+                        <div class="card two-row">
+                            <div class="image-row">
+                                <img src="CSS/Assets/Logo/MainP.jpg"/>
+                            </div>
+                            <div class="content-row">
+                                <p>Content 2</p>
+                            </div>
+                        </div>
+                        <div class="card two-row">
+                            <div class="image-row">
+                                <img src="CSS/Assets/Logo/MainP.jpg"/>
+                            </div>
+                            <div class="content-row">
+                                <p>Content 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+                Copyright &copy; 2021 Junior Philippine Computer Society - Asia Pacific College
+        </div>
+    </body>
+</html>
